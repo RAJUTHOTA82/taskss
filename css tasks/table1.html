@@ -7,15 +7,26 @@
              border-collapse: collapse ;
                 
             }
+            #one{ background-color: green;color: aliceblue;
+
+            }
+            h2, #two{
+                background-color:red;color: white; 
+            }
+            body{ background-color: yellowgreen;
+                }
+              td {background-color: yellow; color: red;
+
+               }
         </style>
     </head>
     <body>
         <h2><center>Normal padding</center> </h2>
        <CENTER> <table>
-        <tr>
+        <tr id="one">
             <th>NAME</th>
             <TH>JOB</TH>
-            <TH>WORK EXPERIANCE</TH>
+            <TH id="two">WORK EXPERIANCE</TH>
         </tr>
         <TR>
             <td>JHONE</td>
@@ -42,12 +53,12 @@
 
             <TABLE>
                 <TR>
-                    <TH colspan="4"> NEW EMPLOYEES RECORED</TH>
+                    <TH colspan="4" style="background-color: blue ;color: aliceblue;"> NEW EMPLOYEES RECORED</TH>
                 </TR>
                 <TR>
-                    <TH>NAME</TH>
-                    <TH colspan="2">JOBS</TH>
-                    <TH>WORK EXPIRANCE</TH>
+                    <TH style="color: aliceblue; background-color: violet;">NAME</TH>
+                    <TH colspan="2" id="one">JOBS</TH>
+                    <TH id="two">WORK EXPIRANCE</TH>
                 </TR>
                 <tr>
                     <TD>JHON</TD>
@@ -76,15 +87,15 @@
 <CENTER>
     <table>
 <TR>
-    <TH colspan="6">TIME TABLE</TH>
+    <TH colspan="6" id="two">TIME TABLE</TH>
 </TR>
 <TR>
-    <TH rowspan="6"> hours</TH>
-    <th>Mon</th>
-    <th>Tue</th>
-    <th>Wed</th>
-    <th>Thus</th>
-    <th>FRI</th>
+    <TH rowspan="6" style="background-color: blue; color: aliceblue;"> hours</TH>
+    <th id="one">Mon</th>
+    <th id="one">Tue</th>
+    <th id="one">Wed</th>
+    <th id="one">Thus</th>
+    <th id="one">FRI</th>
      
 </TR>
 <TR>
@@ -109,7 +120,7 @@
     <TD>MATH</TD>
     <TD> SCEINCE</TD>
     <TD>MATH</TD>
-    <TD colspan="2" rowspan="2" align="CENTER"> PROJECT</TD>
+    <TD colspan="2" rowspan="2" align="CENTER" id="one"> PROJECT</TD>
     
 </TR>
 <TR>
