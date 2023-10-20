@@ -34,8 +34,8 @@ left: 100px;
     font-family: cursive;
     color: aliceblue;
     position: relative;
-    bottom: 650px;
-    left: 500px;
+     top: -550px;
+   left: 500px;
     font-size: 30PX;
      
 }
@@ -98,6 +98,22 @@ button:focus{
     background-color: yellow;
 border: solid red 5px;
 }
+#menuu{
+background-color: black;
+width: 100%;
+padding-top: 500px;
+margin: 0px;  
+}
+.fome{
+    margin: auto;
+    background: whitesmoke;
+    max-width: 850px;
+    padding: 10px;
+}
+ 
+
+ 
+
 
  
 
@@ -108,20 +124,30 @@ border: solid red 5px;
 <body>
     <header>
    <a   id="headd" href="">HOME</a>
-   <a   id="headd" href="">MENU</a>
+   <a   id="headd" href="#mene">MENU</a>
    <a   id="headd" href="#about ">ABOUT</a>
    <a   id="headd" href="#contact">CONTACT</a>
 </header>
 <div>
-<img src="./pizza.jpg" alt="pizza img" width="100%" height="100%">
+<img src="./pizza.jpg" alt="pizza img" width="100%" >
 
 </div>
 <div class="texton-pizza">
 <h1>THIN CRUST</h1>
 <H1 style="display: inline;  position: relative; left: 80px;">PIZZA</H1>
-<a class="imge-menu-text" href="" >LET ME SEE THE MENU</a>
-<h5 style="background-color: black; color: aliceblue; display: inline; position: relative;right: 1060px; top: 400px; font-family: cursive;">OPEN FROM 10AM TO 12PM</h5>
+<a class="imge-menu-text" href="#mene" >LET ME SEE THE MENU</a>
+<h5 style="background-color: black; color: aliceblue; display: inline; position: relative;right: 1060px; top: 300px; font-family: cursive;">OPEN FROM 10AM TO 12PM</h5>
 </div>
+<div id="menuu">
+         <center><h1 id="mene" style="color: aliceblue;font-family: cursive;"> THE MENU</h1></center>
+ <div class="fome">
+    <label for="">hrolojih </label>
+    <input type="text">
+    <label for="">hi your name</label>
+    <input type="text">
+ </div>
+</div>
+ 
 <div class="aboutt">
     <h2 id="about">About</h2>
 <pre id="para">          The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -139,7 +165,7 @@ border: solid red 5px;
 
 <img src="./onepage_restaurant.jpg" width="60%">
 <pre class="imge-below">
-    <h3>OPENIMG HOURS</h3>
+    <h3>OPENING HOURS</h3>
     Mon & Tue CLOSED                           Friday 10:00 - 12:00
 
     Wednesday 10.00 - 24.00                     Saturday 10:00 - 23:00
@@ -150,7 +176,7 @@ border: solid red 5px;
 
 </div>
 <div id="after-img">
-    <img src="https://www.w3schools.com/w3images/map.jpg" width="100%">
+    <img src="https://www.w3schools.com/w3images/map.jpg" width="100%" alt="mapimge">
     <center><h2 id="contact" style="color: aliceblue;">CONTACT</h2></center>
     <pre class="paraa">
         Find us at some address at some place or call us at 05050515-122330
