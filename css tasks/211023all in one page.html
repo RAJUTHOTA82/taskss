@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html and css buttons</title>
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+            
+             
+        }
+        label{
+            display: block;
+            padding: 10px;
+        }
+        button{
+            width: 80%;
+            height: 50px;
+            border-radius: 20px;
+            color: aliceblue;
+            background-color: greenyellow;
+            position: relative;
+            left: 150PX;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-size: large;
+            font-family: cursive;
+        
+             }
+             label{
+                text-align: center;
+             }
+        button:hover{
+            background-color: red;
+            
+        }
+        a:hover{
+            color: aliceblue;
+        
+        }
+        
+        h1::before{
+            content: url(pending_FILL0_wght400_GRAD0_opsz24.png);
+        }
+        #html::before{
+          content: url(html_FILL0_wght400_GRAD0_opsz24.png);
+        }
+        #css::before{
+            content: url(css_FILL0_wght400_GRAD0_opsz24.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>MY TASKS</h1>
+    <label id="html" > Find My HTML tasks here</label>
+    <button><a href="./HTML.HTML"><B>HTML TASKS</B></a></button>
+    <label id="css" > Find My HTML tasks here</label>
+    <button ><a href="./index.html"><B>CSS TASKS</B></a></button>
+</body>
+</html>
