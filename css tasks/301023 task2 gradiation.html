@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cycle task</title>
+    <style>
+        body{
+            background-image: url(./road.jpg);
+            background-repeat: no-repeat;
+            background-size: 1200px;
+            position: relative;
+            
+        }
+ #tyre{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+ 
+    background-image: conic-gradient(from 120deg, red, yellow, green,blue,black,orange,grey);
+ 
+position: relative;
+bottom: 290px;
+left: 217px;
+animation: rotate 2s linear infinite;
+
+}
+#front{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+ 
+    background-image: conic-gradient(from 120deg, red, yellow, green,blue,black,orange,grey);
+ 
+position: relative;
+bottom: 490px;
+left: 600px;
+animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  }
+
+
+
+
+    </style>
+</head>
+<body>
+    <img src="./cycle img.png" alt="">
+    <div id="tyre"></div>
+    <div id="front"></div>
+</body>
+</html>
