@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rainbow</title>
+    <style>
+div{
+    height: 500px;
+    width: 500px;
+    background-image: conic-gradient( red, orange, yellow,green,blue,indigo,violet);
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    animation: rainbow 5s linear infinite;
+    
+    
+}
+body{
+    align-items: center;
+    align-content: center;
+background-color: skyblue;
+}
+@keyframes rainbow {
+    0%{ transform: rotate(360deg);  ;}
+    /* 50%{transform: rotate(180deg);} */
+100%{transform: rotate(0deg);}
+    
+}
+
+
+    </style>
+</head>
+<body>
+   <center> <div></div></center>
+</body>
+</html>
