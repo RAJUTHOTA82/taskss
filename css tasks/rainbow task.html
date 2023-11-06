@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rain bow</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./cloudsss.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bigbox{
+            position: relative;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .bow{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 15px solid transparent;
+            border-top-color: red;
+            border-left-color: red;
+            border-radius: 50%;
+            animation: rainbow 2s linear infinite;
+            transform: rotate(100deg);
+        }
+        .bow:nth-child(2)
+        {
+            width: 90%;
+            height: 90%;
+            border-top-color:  indigo;
+            border-left-color: indigo;
+            
+        }
+        .bow:nth-child(3)
+        {
+            width: 80%;
+            height: 80%;
+            border-top-color:  blue;
+            border-left-color: blue;
+            
+        } .bow:nth-child(4)
+        {
+            width: 70%;
+            height: 70%;
+            border-top-color:  green;
+            border-left-color: green;
+            
+        } .bow:nth-child(5)
+        {
+            width: 60%;
+            height: 60%;
+            border-top-color: yellow;
+            border-left-color: yellow;
+            
+        } .bow:nth-child(6)
+        {
+            width: 50%;
+            height: 50%;
+            border-top-color:  orange;
+            border-left-color: orange;
+            
+        }
+        .bow:nth-child(7)
+        {
+            width: 40%;
+            height: 40%;
+            border-top-color:  violet;
+            border-left-color: violet;
+            
+        }
+        .white{
+           
+            height: 60%;
+            width: 100%;
+            position: relative;
+            top: 80px;
+            background-image: url(./clouds1.avif);
+            background-size: cover;
+            
+            
+        }
+        .bgimg{
+            width: 100%;
+            height:100% ;
+            background-image: url(./clouds1.avif);
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes rainbow {
+            100%{ transform: rotate(400deg);
+            
+            }
+            
+        }
+
+    </style>
+</head>
+<body> <div class="bgimg">
+    <div  class="bigbox">
+     <div class="bow"></div>
+    <div class="bow"></div>
+    <div class="bow"></div>
+    <div class="bow"></div>
+    <div class="bow"></div>
+    <div class="bow"></div>
+    <div class="bow"></div>
+    <div class="white"></div>
+
+    </div></div>
+</body>
+</html>
