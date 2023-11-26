@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//even numbers print using do while//
+var a=0;
+ do{
+    if(a%2==0){
+    
+     console.log(a);    
+    
+    }
+     a++
+ }while(a<=10)
+
+//decriment print 10 to 1
+
+ a=10;
+ do{
+   
+     console.log(a);    
+    
+     a--
+ }while(a>=1)
+//square of numbers upto 10
+for (var a = 1; a <= 10; a++) {
+    var square = a * a;
+    console.log(square);
+}
+// Write a program that prints the powers of 2 up to 2^10 (1024) using a `while` loop.
+
+var a = 2;
+   var b = 0;
+   var c = 1; 
+
+   while ( b < 10 )
+   {
+      c = a * c;
+      b++ 
+      console.log(c);
+   }
+ // Write a program that prints even numbers from 2 to 20 using a `for` loop.
+
+ for(a=2;a<=20;a++){
+     console.log(a)
+ }
+// printing string reverse
+var a="bye all"
+ b=a.length-1;
+for(c=b;c>=0;c--){
+    console.log(a[c]);
+}
+//skip numbers Write a program that prints numbers from 1 to 20, skipping every second number (1, 3, 5, 7, 9, 11, 13, 15, 17, 19) using a `for` loop.
+
+ 
+for(a=1;a>20;a++){
+    if(a%2!=0){
+    console.log(a);
+    }
+}
+// for loop sum of all numbers
+sum=0;
+ for(a=1;a<=20;a++){
+ sum+=a;
+ 
+ }
+ console.log(sum);
+
+
+ // while loop sum of numbers 1-20
+  var a=1 ;
+  sum=0;
+  while(a<=20){
+    sum+=a;
+    a++;  }
+  console.log(sum);
+  // Write a program that prints whether a number is even or odd for numbers 1 to 20 using a `for` loop.
+  for(var a=prompt("enter a number");a<=20;a++){
+ 
+ if(a%2==0){
+     console.log(a);
+     console.log("entered number is even")
+ }else{
+     console.log(a);
+     console.log("entered number is odd")
+ }
+}
+
+// Create a program that prints the cube of numbers from 1 to 10 using a `while` loop.
+
+var a=1;
+  while(a<=10){
+      var cube=a*a*a;
+      a++;
+      console.log(cube);
+  }
+  //or
+  var a=1;
+  while(a<=10){
+    console.log(a**3);
+    a++;
+  }
+  //  Write a program that prints numbers from 20 to 1 in descending order using a `for` loop.
+for(a=20;a>=0;a--){
+    console.log(a);
+}
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

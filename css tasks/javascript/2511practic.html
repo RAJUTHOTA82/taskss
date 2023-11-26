@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+ //captaizing after letter*/
+var a="ch_ait_an_ak_umar"
+   b="";
+   
+   for(i=0;i<a.length;i++){
+       if(a[i]=="_"){
+           b+=a[i+1].toUpperCase();
+           i++;
+        //   console.log(a[i+1].toUpperCase())
+       }
+       else{
+           b+=a[i];
+           
+       }
+         
+   }
+console.log(b);
+
+
+
+//captaizing before letter*/
+
+var a="h_ll_ku_ar"
+   b="";
+   
+   for(i=0;i<a.length;i++){
+       if(a[i+1]=="_"){
+           b+=a[i].toUpperCase()
+           
+     i++;
+       }
+       else{
+           b+=a[i]
+           
+       }
+         
+   }
+console.log(b);
+
+    </script>
+</body>
+</html>
