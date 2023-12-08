@@ -13,19 +13,22 @@
 
 <script>
 
-var i=10;
-for(i=0 ; i<10 ; i++)
  
-console.log(i);
+ a=["a", "ccc", "dddd", "bb"]
+ c=""
+ for(i=0;i<a.length;i++){
+      for(j=i+1;j<a.length;j++){
+        if(a[i].length>a[j].length) {
+            c=a[i]
+            a[i]=a[j]
+            a[j]=c
+            
+        }
+     
+ }
 
-let a=350;
-if(a>30)
- {
-console.log("true");
-}
-else{
-    console.log("false");
-}
+ }
+  console.log(a)
  
  
 

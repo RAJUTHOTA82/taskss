@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Create a function that takes two numbers as arguments and returns their sum.*/
+
+function raju(a,b){
+   return a+b;
+     
+ }console.log(raju(5,2))
+
+/*Write a function that takes an integer minutes and converts it to seconds.*/
+
+function multi(a) {
+    return a*60;
+}console.log(multi(5));
+
+/*Create a function that takes a number as an argument, increments the number by +1 and returns the result.*/
+
+function plus1(a){
+ return a+1
+}
+console.log(plus1(10));
+
+/*Create a function that takes the age in years and returns the age in days.*/
+
+function multi(a) {
+    return a*365;
+}console.log(multi(5));
+/*Create a function that takes voltage and current and returns the calculated power.*/
+
+function multi(c,v){
+    return c*v;
+}console.log( "power = " +multi(5,10))
+
+/*6.	Write a function that returns the string "something" joined with a space " " and the given argument a.*/
+function raju(a){
+    return "something  " +a
+}console.log(raju("hi"))
+
+/*7.	Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.*/
+
+function raju(a,b){
+     if(a==10 || b==10||a+b==10){
+         console.log("true")
+     }
+     else{
+         console.log("false")
+     }
+}(raju(5,7))
+
+/*8.	Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.*/
+
+function raju(a,b){
+     if(a.length==b.length){
+         console.log("true")
+     }
+     else{
+         console.log("false")
+     }
+ }raju("1234","12534")
+
+
+/*9.	Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.*/
+
+var raju=(a)=>{
+     return "hello "+a
+ }
+ console.log(raju("rajuu"))
+
+
+
+ /* 10.	Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).*/
+
+  function raju(a){
+     temp="";
+     for(i=0;i<a.length;i++){
+         if(i==0){
+             temp=temp+"("+a[i]
+             
+         }
+          else if (i==3){
+                 temp=temp+")"+a[i]
+             }
+             else if(i==6){
+                 temp=temp+"-"+a[i]
+             }
+         else{
+             temp=temp+a[i]
+         }
+     } console.log(temp)
+     
+ }raju([1,2,3,4,5,6,7,8,9,0])
+
+ /*11.	Create a function that returns an array of strings sorted by length in ascending order.*/
+
+ a=["a", "ccc", "dddd", "bb"]
+ c=""
+ for(i=0;i<a.length;i++){
+      for(j=i+1;j<a.length;j++){
+        if(a[i].length>a[j].length) {
+            c=a[i]
+            a[i]=a[j]
+            a[j]=c
+            
+        }
+     
+ }
+
+ }
+  console.log(a)
+
+
+
+
+/*12.	Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
+Example:
+1.	findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]) ➞ [7, 90, 2] */
+
+
+var a= [[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]
+ var b=[]
+ for(i=0;i<a.length;i++){
+     c=" "
+     for(j=0;j<a[i].length;j++){
+         if(c<a[i][j]){
+             c=a[i][j]
+         }
+     }
+    b.push(c)  
+ }
+ console.log(b)
+
+
+
+ /*13.	Create a function that takes an array of numbers and returns the second largest number.
+Example:
+secondLargest([10, 40, 30, 20, 50]) ➞ 40   */
+
+
+
+
+
+
+
+
+
+
+/*15.	Create a function that takes an array of integers as an argument and returns a unique number from that array. All numbers except unique ones have the same number of occurrences in the array.
+
+Example:
+
+findSingleNumber([2, 2, 2, 3, 4, 4, 4]) ➞ 3 */
+
+
+
+var a=[1,1,2,2,3,4,4,5,5,6,6]
+ for(i=0;i<a.length;i++){
+     var count=0;
+
+ for(j=0;j<a.length;j++){
+     if(a[i]==a[j]){
+         count=count+1;
+     }
+ }
+ if(count==1){
+     console.log(a[i])
+ }
+ }
+
+
+
+
+ /*17.	Create a function that takes a string and returns the number (count) of vowels contained within it.
+Example:
+
+countVowels("Celebration") ➞ 5*/
+
+ 
+let a = "Celebration";
+let Count = 0;
+
+for (let i = 0; i < a.length; i++) {
+    let char = a[i];
+
+ 
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+        Count++;
+    }
+}
+
+console.log(Count);
+
+
+/*using functions*/
+
+ 
+
+
+
+/*18.	Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+Example:
+reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"*/
+
+  function rav(a){
+     c=" "
+     for(i=0;i<a.length;i++){
+         
+         if(a[i]==a[i].toUpperCase()){
+           c= c+a[i].toLowerCase()
+           
+         }
+         else{
+          c=c+a[i].toUpperCase()
+         }
+           
+     }
+    return c
+     
+ }console.log(rav("Happy Birthday"))
+
+
+
+ /*19.	  Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer.
+			
+			Input:      n=5
+			Output:   2 4 6 8 10  */
+
+function rav(a){
+  c=" "
+     for(i=1;i<6;i++){
+         
+      c=c+(i*2)+" "
+           
+     }
+    return c;
+     
+ }
+ console.log(rav(2))
+
+
+
+ /*20. Create Function that will take one parameter and return type of the data.
+			
+			Input:       500
+			Output:     Integer
+
+			Input:       Coding
+			Output:    String      */
+ 
+function type(a){
+
+
+return typeof(a)
+
+}console.log(type(500))
+function type(a){
+
+
+return typeof(a)
+
+}console.log(type("coding"))
+
+/*.22. C Program to find factorial of number.
+		
+			Input: n=5
+			Output: 120  */
+
+            n=5
+ c=1;
+ for(i=n;i>0;i--){
+      c=c*i
+ }
+
+ console.log(c)
+ 
+
+
+/*
+ 24. Print Patter using loop.
+
+			1
+			1 2
+			1 2 3
+			1 2 3 4
+  			1 2 3 4 5  */
+
+
+c=""
+
+for(i=1;i<6;i++){
+   c=c+i+" " 
+   console.log(c)
+}
+
+
+/* 25. C Program to Calculate the Power of a Number(using loop only).
+
+			Input: n=5, p=3
+			Output: 5 ^ 3 = 125
+			Explanation: 5 x 5 x 5 = 125  */
+
+            
+    a=5
+ c=0;
+ for(i=1;i<4;i++){
+    c=a**i 
+ }
+
+ console.log(c)
+
+ /*29. Program to find a missing number
+
+			Input:  n=5(length of array), arr= [5,3,1,4]
+			Output: 2 is missing*/
+
+            var a=[1,2,3,5,6,8]
+for(i=0;i<a.length-1;i++){
+    if(a[i+1]!=a[i]+1){
+        console.log(a[i]+1)
+    }
+}
+
+
+
+
+ /*32. Reverse a number using while Loop
+
+			Input: 123
+			Output: 321  */
+ 
+a=123
+ b=""
+ while(a>0){
+     r=a%10
+     b=b+r
+     a= parseInt(a/10)
+     
+ }
+ console.log(b) 
+
+ /*33. Count occurrence of number:
+
+			Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+			Output: 7 present 2 times. */
+
+
+            function raju(a){
+     var d=[]
+    for(i=0;i<a.length;){
+    var count=0;
+    var b=""
+    var c=[]
+   
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count++;
+            b=a[i]+"-"+count
+        }
+        else{
+            c.push(a[j])
+        }
+    }
+    a=c
+    d.push(b)
+}
+console.log(d)
+
+}raju([1,6,3,1,5,9,7,2,1,9,3,7,8,9,10])
+
+
+
+  
+            
+
+
+ 
+
+
+
+ 
+
+
+ 
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+let a=["hello","ookay"]
+  
+let c=[]
+for(i=0;i<a.length;i++){
+  var  b=" ";
+    for(j=0;j<a[i].length;j++){
+        if(j%2==0){
+            b=b+a[i][j]
+           
+        }
+        
+    }
+    c.push(b)
+   
+}
+ console.log(c)
+
+
+
+
+ /* Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
+ / Example:
+ /findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]) ➞ [7, 90, 2]*/
+ 
+ let a=[[4, 2, 7, 1],[20, 70,40, 90],[1,2,0]]
+ 
+ var c=[]
+ for(i=0;i<a.length;i++){
+     var b=0;
+     for(j=0;j<a[i].length;j++){
+         if(b<a[i][j]){
+         b=a[i][j]
+         
+     }
+     }
+        c.push(b)
+        
+ }
+  console.log(c)
+ 
+  
