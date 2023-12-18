@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+/*1.	Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array.
+
+Examples :
+
+toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
+
+toArray({ shrimp: 15, tots: 12 }) ➞ [["shrimp", 15], ["tots",12]]
+
+toArray({}) ➞ []  */
+
+ 
+d=({ a: 1, b: 2 })
+e=Object.entries(d)
+
+console.log(e)
+
+/*2.	Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+Examples :
+
+arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+
+arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+
+arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]  */
+
+
+
+var c=[]
+ function mul(a,b){
+      for(i=1;i<=b;i++){
+    c.push(a*i) 
+ }
+ return c
+     
+ }console.log(mul(7,5))
+/*3.	Create the function that takes an array with objects and returns the sum of people's budgets.
+
+Examples :
+
+getBudgets([
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve",  age: 32, budget: 40000 },
+  { name: "Martin",  age: 16, budget: 2700 }
+]) ➞ 65700
+
+getBudgets([
+  { name: "John",  age: 21, budget: 29000 },
+  { name: "Steve",  age: 32, budget: 32000 },
+  { name: "Martin",  age: 16, budget: 1600 }
+]) ➞ 62600  */
+
+a= [
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve",  age: 32, budget: 40000 },
+  { name: "Martin",  age: 16, budget: 2700 }]
+  sum=0
+  for(i=0;i<a.length;i++){
+      sum=sum+a[i].budget
+  }
+console.log(sum)
+
+/*4.	Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4]} and returns an array of objects like { name: "John", avgNote: 4 }. If a student has no notes (an empty array) then let's assume avgNote: 0.
+	Example :
+
+[
+  { name: "John", notes: [3, 5, 4]}
+] ➞ [
+  { name: "John", avgNote: 4 }
+]
+*/
+
+ 
+a={ name: "John", notes: [3, 5, 4]}
+b=a.notes
+ 
+sum=0;
+count=0;
+for(i=0;i<b.length;i++){
+    sum=sum+b[i]
+    count++
+}
+avg=sum/count
+delete a["notes"]
+a["avg notes"]=avg
+console.log(a)
+
+ /*5.	Create a function that moves all capital letters to the front of a word.
+	Examples :
+
+capToFront("hApPy") ➞ "APhpy"
+
+capToFront("moveMENT") ➞ "MENTmove"
+
+capToFront("shOrtCAKE") ➞ "OCAKEshrt"*/
+
+
+function raju(a){
+      
+      b=""
+      c=""
+      
+     for(i=0;i<a.length;i++){
+    
+         if(a[i]== a[i].toUpperCase()){
+             b=b+a[i]
+         }
+         else{
+            c=c+a[i] 
+             
+         }
+     }
+     return b+c
+      }
+     console.log(raju("hAPpY"))
+     
+ 
+ /*6.	Count each occurrence of number(can not use predefined function).
+
+	Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+			Output: 1 present 2 times.
+				   2 present 1 times.
+				   3 present 2 times.
+				   5 present 1 times …….  Etc */
+
+     function raju(a){
+    
+    for(i=0;i<a.length;){
+    var count=0;
+    var b=""
+    var c=[]
+   
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count++;
+            b=a[i]+"present"+count
+        }
+        else{
+            c.push(a[j])
+        }
+    }
+    a=c
+   
+    console.log(b)
+}
+
+
+}raju([1,6,3,1,5,9,7,2,1,9,3,7,8,9,10])
+
+
+
+/*7.	Write a function that accepts an array of strings. Return the longest string(can not use predefined function).
+
+		Input: [‘nik’, ’mikhil’, ’Cow’,’Elephant’] 							
+        Output: Elephant */
+
+         
+function comp(a){
+c=""
+for(i=0;i<a.length;i++){
+    if(c.length<a[i].length){
+      c=a[i]
+    }
+}
+ return c
+}
+console.log(comp(["nik", "mikhil", "Cow","Elephant"]))
+
+/*9.	Write Program to remove duplicate elements in an array and sort it in descending order(can not use predefined function).
+
+			Input: [5,3,5,2,1,1,7,3,5,6]
+			Output: [7,6,5,32,1] */
+
+
+            a=[5,3,5,2,1,1,7,3,5,6]
+  var z=[]
+ for(i=0;i<a.length;){
+     b=""
+     c=[]
+     
+     for(j=0;j<a.length;j++){
+          if(a[i]==a[j]){
+            b=a[i]
+            
+        }
+        else{
+            
+            c.push(a[j])
+        }
+     }
+    a=c
+    z.push(b)
+     
+ }
+ console.log(z)
+/*13.	Find sum of the Unique numbers: 
+Example : Let arr = [1, 2, 2, 1, 3, 5, 1];
+ The unique numbers are 1,2, 3, 5 so the sum should be 11. */
+
+ 
+ 
+ a=[1, 2, 2, 1, 3, 5, 1];
+  var z=[]
+ for(i=0;i<a.length;){
+     b=""
+     c=[]
+for(j=0;j<a.length;j++){
+          if(a[i]==a[j]){
+            b=a[i]
+        }
+        else{
+            
+            c.push(a[j])
+        }
+     }
+    a=c
+    z.push(b)
+ }
+ sum=0;
+ for(i=0;i<z.length;i++){
+     sum=sum+z[i]
+ }
+ console.log(sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
